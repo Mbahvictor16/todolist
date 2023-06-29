@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  overflow-x: hidden;
+  background: linear-gradient(to top right, rgb(16, 23, 43), rgb(5, 15, 40));
+  width: 100vw;
+  height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #fff;
+  position: relative;
+}
+
+#app {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  padding: 20px 15px;
+  font-size: 1.25em;
+  text-align: center;
+  font-weight: bolder;
+}
+
+#form-field {
+  margin-block: 20px;
+}
+
+form {
+  max-width: 500px;
+  min-width: 280px;
+  padding-inline: 10px;
+  margin-inline: auto;
+}
+
+.form-box {
+  display: block;
+  width: 100%;
+  margin-block: 5px;
+}
+
+input[type="text"],
+textarea {
+  margin: auto;
+  width: 100%;
+  padding: 8px 6px;
+  font-size: 1.05em;
+  border-radius: 5px;
+  caret-color: rgb(5, 15, 40);
+  border: 1px solid #fff;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+input:focus,
+textarea:focus {
+  outline: 1px solid #000;
+  border: 1px solid #000;
+}
+
+button {
+  padding: 8px 6px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#tasks {
+  padding: 25px;
+}
+
+.task {
+  background: #fff;
+  display: flex;
+  max-width: 500px;
+  color: #000;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 15px auto;
+}
+
+.text {
+  flex: 60%;
+  padding: 0px 10px 10px;
+}
+
+.title {
+  border-bottom: 1px solid #000;
+  padding: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.description {
+  padding: 5px;
+  font-style: oblique;
+  word-break: break-word;
+}
+
+.description::before {
+  content: "\201C";
+}
+
+.description::after {
+  content: "\201D";
+}
+
+[type="submit"] {
+  width: 30%;
+  margin-left: 70%;
+  background: orange;
+  border: 1px solid orange;
+}
+
+input[type="checkbox"] {
+  accent-color: rgb(5, 15, 40);
+  cursor: pointer;
+}
+
+.del-btn {
+  flex: 30%;
+  background: red;
+  border: 1px solid red;
+}
+
+.creator {
+  font-weight: bold;
+  position: static;
+  bottom: 0%;
+  text-align: center;
+}
