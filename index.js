@@ -115,5 +115,5 @@ function addTask(newTask) {
     delBtn.textContent = "Delete";
     DeleteDiv.append(delBtn);
     taskDiv.append(checkBoxDiv, textDiv, DeleteDiv);
-    (_a = document.querySelector("#tasks")) === null || _a === void 0 ? void 0 : _a.append(taskDiv);
+    (_a = document.querySelector("#tasks")) === null || _a === void 0 ? void 0 : _a.prepend(taskDiv);
 }

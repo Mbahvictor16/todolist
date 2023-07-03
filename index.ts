@@ -155,5 +155,5 @@ function addTask(newTask: Task) {
 
     taskDiv.append(checkBoxDiv, textDiv, DeleteDiv)
 
-    document.querySelector("#tasks")?.append(taskDiv)
+    document.querySelector<HTMLDivElement>("#tasks")?.prepend(taskDiv)
 }
